@@ -82,8 +82,8 @@ export function Projects() {
                     {featured.description}
                   </p>
                   <ul className="mt-5 flex flex-wrap gap-2">
-                    {featured.tags.map((tag) => (
-                      <li key={tag}>
+                    {featured.tags.map((tag, index) => (
+                      <li key={`${featured.slug}-tag-${index}`}>
                         <Badge>{tag}</Badge>
                       </li>
                     ))}
@@ -125,8 +125,8 @@ export function Projects() {
                     {project.description}
                   </p>
                   <ul className="mt-5 flex flex-wrap gap-2">
-                    {project.tags.map((tag) => (
-                      <li key={tag}>
+                    {project.tags.map((tag, index) => (
+                      <li key={`${project.slug}-tag-${index}`}>
                         <Badge>{tag}</Badge>
                       </li>
                     ))}

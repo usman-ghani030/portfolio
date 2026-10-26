@@ -38,6 +38,7 @@ export type Profile = {
   bio: string;
   location: string;
   availability: string;
+  focus: string;
   email: string;
   socials: { label: string; url: string }[];
 };

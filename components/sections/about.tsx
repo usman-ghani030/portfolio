@@ -22,14 +22,15 @@ export function About() {
 
         <div className="mt-14 grid gap-10 md:grid-cols-12 md:gap-8">
           <div className="md:col-span-4">
-            <div className="relative border border-line bg-panel p-2">
-              <div className="relative aspect-square overflow-hidden bg-void">
+            <div className="relative overflow-hidden rounded-xl border border-line bg-panel p-2">
+              <div className="relative aspect-[4/5] overflow-hidden rounded-lg bg-void">
                 <Image
                   src="/profile.png"
                   alt={`Portrait of ${profile.name}`}
-                  fill
+                  width={768}
+                  height={1364}
                   sizes="(min-width: 768px) 30vw, 90vw"
-                  className="object-cover object-[center_18%]"
+                  className="h-full w-full object-cover object-[center_18%]"
                 />
               </div>
               <div className="flex items-center justify-between px-2 py-3 font-mono text-[0.6rem] uppercase tracking-[0.18em] text-steel">
@@ -45,6 +46,14 @@ export function About() {
                 </dt>
                 <dd className="text-right text-sm text-bone">
                   {profile.location}
+                </dd>
+              </div>
+              <div className="flex items-baseline justify-between gap-4 py-3">
+                <dt className="font-mono text-[0.6rem] uppercase tracking-[0.18em] text-steel">
+                  Focus
+                </dt>
+                <dd className="max-w-[62%] text-right text-sm text-bone">
+                  {profile.focus}
                 </dd>
               </div>
               <div className="flex items-baseline justify-between gap-4 py-3">

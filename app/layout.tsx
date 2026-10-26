@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Archivo, Inter, JetBrains_Mono } from "next/font/google";
+import { profile } from "@/data/profile";
 import "./globals.css";
 
 const inter = Inter({
@@ -22,8 +23,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "Portfolio of a software developer.",
+  title: `${profile.name} | ${profile.role}`,
+  description: `Portfolio of ${profile.name}, ${profile.role}. ${profile.tagline}`,
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

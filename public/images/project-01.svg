@@ -1,32 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" fill="none">
-  <rect width="1200" height="800" fill="#0B0F16"/>
-  <g stroke="#1D2634" stroke-width="1" opacity="0.65">
-    <path d="M80 0V800M200 0V800M320 0V800M440 0V800M560 0V800M680 0V800M800 0V800M920 0V800M1040 0V800M1160 0V800"/>
-    <path d="M0 80H1200M0 200H1200M0 320H1200M0 440H1200M0 560H1200M0 680H1200"/>
-  </g>
-  <text x="64" y="64" fill="#8E99A8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18" letter-spacing="4">SIGNAL DESK / INCIDENT TIMELINE</text>
-  <line x1="64" y1="96" x2="1136" y2="96" stroke="#1D2634"/>
-  <rect x="64" y="144" width="360" height="176" fill="#0F141D" stroke="#1D2634"/>
-  <rect x="456" y="144" width="680" height="176" fill="#0F141D" stroke="#1D2634"/>
-  <path d="M88 184H380M88 216H320M88 248H352M88 280H240" stroke="#8E99A8" stroke-opacity="0.5" stroke-width="8"/>
-  <path d="M480 184H1112M480 216H1000M480 248H1080M480 280H880" stroke="#8E99A8" stroke-opacity="0.25" stroke-width="8"/>
-  <line x1="80" y1="480" x2="1120" y2="480" stroke="#1D2634" stroke-width="2"/>
-  <path d="M80 480H220L240 440L260 520L280 480H440L460 420L480 540L500 480H680L700 456L720 504L740 480H920L940 400L960 560L980 480H1120" stroke="#F2A93B" stroke-width="3" stroke-linecap="square" stroke-linejoin="bevel"/>
-  <g fill="#F2A93B">
-    <rect x="236" y="436" width="8" height="8"/>
-    <rect x="456" y="416" width="8" height="8"/>
-    <rect x="696" y="452" width="8" height="8"/>
-    <rect x="936" y="396" width="8" height="8"/>
-  </g>
-  <g fill="#8E99A8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" letter-spacing="2">
-    <text x="80" y="604">08:42</text>
-    <text x="280" y="604">09:10</text>
-    <text x="480" y="604">09:38</text>
-    <text x="680" y="604">10:06</text>
-    <text x="880" y="604">10:34</text>
-    <text x="1040" y="604">11:02</text>
-  </g>
-  <g fill="#8E99A8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" letter-spacing="3" opacity="0.7">
-    <text x="64" y="744">PLACEHOLDER / REPLACE WITH PROJECT SCREENSHOT</text>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" fill="none" role="img" aria-label="Neutral gradient project placeholder">
+  <defs>
+    <linearGradient id="base" x1="80" y1="0" x2="1120" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#171C26"/>
+      <stop offset="0.55" stop-color="#0E131B"/>
+      <stop offset="1" stop-color="#090D13"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.3" cy="0.24" r="0.85">
+      <stop stop-color="#2B3444" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#0B0F16" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#base)"/>
+  <rect width="1200" height="800" fill="url(#glow)"/>
 </svg>

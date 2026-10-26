@@ -1,33 +1,17 @@
 import type { SkillGroup } from "@/types";
 
-// TODO: replace these placeholder skill groups with real ones.
+// Only Next.js and React are confirmed; everything else is a marked placeholder.
 export const skillGroups: SkillGroup[] = [
   {
     category: "Frontend",
-    items: ["TypeScript", "React", "Next.js", "Tailwind CSS", "Accessibility"],
+    items: ["Next.js", "React", "TODO: replace"],
   },
   {
-    category: "Backend",
-    items: ["Node.js", "PostgreSQL", "Redis", "Server Actions", "Zod"],
+    category: "Backend and APIs",
+    items: ["TODO: replace"],
   },
   {
-    category: "Infrastructure",
-    items: [
-      "Docker",
-      "GitHub Actions",
-      "Vercel",
-      "OpenTelemetry",
-      "Grafana",
-    ],
-  },
-  {
-    category: "Practice",
-    items: [
-      "Design systems",
-      "Technical writing",
-      "Playwright",
-      "Figma",
-      "Git",
-    ],
+    category: "AI and LLM",
+    items: ["TODO: replace"],
   },
 ];
