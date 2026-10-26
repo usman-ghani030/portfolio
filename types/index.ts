@@ -29,6 +29,7 @@ export type Profile = {
   tagline: string;
   bio: string;
   location: string;
+  availability: string;
   email: string;
   socials: { label: string; url: string }[];
 };
