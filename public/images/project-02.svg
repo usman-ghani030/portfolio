@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" fill="none">
+  <rect width="1200" height="800" fill="#0B0F16"/>
+  <g stroke="#1D2634" stroke-width="1" opacity="0.65">
+    <path d="M80 0V800M200 0V800M320 0V800M440 0V800M560 0V800M680 0V800M800 0V800M920 0V800M1040 0V800M1160 0V800"/>
+    <path d="M0 80H1200M0 200H1200M0 320H1200M0 440H1200M0 560H1200M0 680H1200"/>
+  </g>
+  <text x="64" y="64" fill="#8E99A8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18" letter-spacing="4">GRIDWATCH / UPTIME</text>
+  <line x1="64" y1="96" x2="1136" y2="96" stroke="#1D2634"/>
+  <text x="64" y="168" fill="#E9E6DF" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="72" letter-spacing="-2">99.98%</text>
+  <text x="66" y="208" fill="#8E99A8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" letter-spacing="3">LAST 30 DAYS / ALL SYSTEMS</text>
+  <line x1="64" y1="560" x2="1136" y2="560" stroke="#1D2634" stroke-width="2"/>
+  <g fill="#1D2634">
+    <rect x="80" y="360" width="52" height="200"/>
+    <rect x="148" y="320" width="52" height="240"/>
+    <rect x="216" y="390" width="52" height="170"/>
+    <rect x="284" y="280" width="52" height="280"/>
+    <rect x="352" y="340" width="52" height="220"/>
+    <rect x="420" y="300" width="52" height="260"/>
+    <rect x="488" y="380" width="52" height="180"/>
+    <rect x="556" y="250" width="52" height="310"/>
+    <rect x="624" y="330" width="52" height="230"/>
+    <rect x="692" y="290" width="52" height="270"/>
+    <rect x="760" y="370" width="52" height="190"/>
+    <rect x="828" y="260" width="52" height="300"/>
+    <rect x="896" y="310" width="52" height="250"/>
+    <rect x="964" y="350" width="52" height="210"/>
+    <rect x="1032" y="280" width="52" height="280"/>
+  </g>
+  <rect x="80" y="360" width="52" height="200" fill="#8E99A8" fill-opacity="0.35"/>
+  <rect x="284" y="280" width="52" height="280" fill="#8E99A8" fill-opacity="0.2"/>
+  <rect x="556" y="250" width="52" height="310" fill="#F2A93B" fill-opacity="0.8"/>
+  <rect x="828" y="260" width="52" height="300" fill="#8E99A8" fill-opacity="0.25"/>
+  <rect x="1032" y="280" width="52" height="280" fill="#8E99A8" fill-opacity="0.2"/>
+  <g fill="#8E99A8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" letter-spacing="2">
+    <text x="80" y="604">API</text>
+    <text x="280" y="604">WEB</text>
+    <text x="480" y="604">QUEUE</text>
+    <text x="680" y="604">DB</text>
+    <text x="880" y="604">WORKERS</text>
+    <text x="1060" y="604">EDGE</text>
+  </g>
+  <g fill="#8E99A8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" letter-spacing="3" opacity="0.7">
+    <text x="64" y="744">PLACEHOLDER / REPLACE WITH PROJECT SCREENSHOT</text>
+  </g>
+</svg>

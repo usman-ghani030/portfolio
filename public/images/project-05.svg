@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" fill="none">
+  <rect width="1200" height="800" fill="#0B0F16"/>
+  <g stroke="#1D2634" stroke-width="1" opacity="0.65">
+    <path d="M80 0V800M200 0V800M320 0V800M440 0V800M560 0V800M680 0V800M800 0V800M920 0V800M1040 0V800M1160 0V800"/>
+    <path d="M0 80H1200M0 200H1200M0 320H1200M0 440H1200M0 560H1200M0 680H1200"/>
+  </g>
+  <text x="64" y="64" fill="#8E99A8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18" letter-spacing="4">QUIET HOURS / WEEK 18</text>
+  <line x1="64" y1="96" x2="1136" y2="96" stroke="#1D2634"/>
+  <g fill="#8E99A8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" letter-spacing="2">
+    <text x="104" y="144">MON</text>
+    <text x="248" y="144">TUE</text>
+    <text x="392" y="144">WED</text>
+    <text x="536" y="144">THU</text>
+    <text x="680" y="144">FRI</text>
+    <text x="824" y="144">SAT</text>
+    <text x="968" y="144">SUN</text>
+  </g>
+  <g stroke="#1D2634" stroke-width="1">
+    <path d="M64 168H1136M64 264H1136M64 360H1136M64 456H1136M64 552H1136"/>
+    <path d="M208 120V620M352 120V620M496 120V620M640 120V620M784 120V620M928 120V620M1072 120V620"/>
+  </g>
+  <g fill="#8E99A8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" letter-spacing="1" opacity="0.55">
+    <text x="64" y="196">09:00</text>
+    <text x="64" y="292">11:00</text>
+    <text x="64" y="388">13:00</text>
+    <text x="64" y="484">15:00</text>
+    <text x="64" y="580">17:00</text>
+  </g>
+  <rect x="224" y="184" width="112" height="64" fill="#F2A93B" fill-opacity="0.85"/>
+  <rect x="368" y="280" width="112" height="64" fill="#8E99A8" fill-opacity="0.18"/>
+  <rect x="512" y="184" width="112" height="160" fill="#F2A93B" fill-opacity="0.22" stroke="#F2A93B" stroke-opacity="0.5"/>
+  <rect x="656" y="376" width="112" height="64" fill="#8E99A8" fill-opacity="0.18"/>
+  <rect x="800" y="472" width="112" height="64" fill="#8E99A8" fill-opacity="0.18"/>
+  <rect x="944" y="280" width="112" height="64" fill="#8E99A8" fill-opacity="0.18"/>
+  <rect x="224" y="472" width="112" height="64" fill="#8E99A8" fill-opacity="0.18"/>
+  <rect x="368" y="376" width="112" height="64" fill="#8E99A8" fill-opacity="0.18"/>
+  <g fill="#8E99A8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" letter-spacing="3" opacity="0.7">
+    <text x="64" y="744">PLACEHOLDER / REPLACE WITH PROJECT SCREENSHOT</text>
+  </g>
+</svg>
