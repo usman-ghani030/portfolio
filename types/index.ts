@@ -23,6 +23,14 @@ export type SkillGroup = {
   items: string[];
 };
 
+export type Education = {
+  institution: string;
+  program: string;
+  start: string;
+  end: string;
+  summary: string;
+};
+
 export type Profile = {
   name: string;
   role: string;
