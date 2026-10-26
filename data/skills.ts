@@ -1,17 +1,34 @@
 import type { SkillGroup } from "@/types";
 
-// Only Next.js and React are confirmed; everything else is a marked placeholder.
 export const skillGroups: SkillGroup[] = [
   {
     category: "Frontend",
-    items: ["Next.js", "React", "TODO: replace"],
+    items: ["React.js", "Next.js"],
   },
   {
-    category: "Backend and APIs",
-    items: ["TODO: replace"],
+    category: "Backend & Databases",
+    items: [
+      "Node.js",
+      "Express.js",
+      "FastAPI",
+      "Python",
+      "MongoDB",
+      "PostgreSQL",
+    ],
   },
   {
-    category: "AI and LLM",
-    items: ["TODO: replace"],
+    category: "AI & LLM",
+    items: [
+      "Prompt Engineering",
+      "Context Engineering",
+      "LangChain",
+      "LangGraph",
+      "OpenAI Agents SDK",
+      "MCP (Model Context Protocol)",
+    ],
+  },
+  {
+    category: "DevOps",
+    items: ["Docker"],
   },
 ];

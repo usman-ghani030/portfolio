@@ -145,7 +145,7 @@ export function Hero() {
             <div className="relative rounded-2xl border border-line/80 bg-panel p-2">
               <div className="relative aspect-[4/5] overflow-hidden rounded-xl bg-void">
                 <Image
-                  src="/profile.png"
+                  src={profile.image}
                   alt={`Portrait of ${profile.name}`}
                   width={768}
                   height={1364}

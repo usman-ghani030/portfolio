@@ -25,7 +25,7 @@ export function About() {
             <div className="relative overflow-hidden rounded-xl border border-line bg-panel p-2">
               <div className="relative aspect-[4/5] overflow-hidden rounded-lg bg-void">
                 <Image
-                  src="/profile.png"
+                  src={profile.image}
                   alt={`Portrait of ${profile.name}`}
                   width={768}
                   height={1364}

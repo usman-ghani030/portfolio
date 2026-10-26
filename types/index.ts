@@ -1,6 +1,7 @@
 export type Project = {
   slug: string;
   title: string;
+  tagline?: string;
   description: string;
   image: string;
   tags: string[];
@@ -40,5 +41,7 @@ export type Profile = {
   availability: string;
   focus: string;
   email: string;
+  image: string;
+  metaDescription: string;
   socials: { label: string; url: string }[];
 };

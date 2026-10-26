@@ -24,7 +24,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: `${profile.name} | ${profile.role}`,
-  description: `Portfolio of ${profile.name}, ${profile.role}. ${profile.tagline}`,
+  description: profile.metaDescription,
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

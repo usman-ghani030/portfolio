@@ -3,25 +3,27 @@ import { ArrowUpRight, CodeXml } from "lucide-react";
 import { projects } from "@/data/projects";
 import type { Project } from "@/types";
 import { Badge } from "@/components/ui/badge";
+import { buttonStyles } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Container } from "@/components/ui/container";
 import { SectionHeading } from "@/components/ui/section-heading";
 
 function ProjectLinks({ project }: { project: Project }) {
+  if (!project.liveUrl && !project.repoUrl) {
+    return null;
+  }
+
   return (
-    <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
+    <div className="flex flex-wrap items-center gap-2">
       {project.liveUrl ? (
         <a
           href={project.liveUrl}
           target="_blank"
-          rel="noreferrer"
-          className="group/link inline-flex items-center gap-1.5 font-mono text-[0.65rem] uppercase tracking-[0.16em] text-bone transition-colors hover:text-signal"
+          rel="noopener noreferrer"
+          className={buttonStyles({ variant: "primary", size: "sm" })}
         >
-          Live site
-          <ArrowUpRight
-            className="h-3.5 w-3.5 transition-transform duration-200 group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5"
-            aria-hidden="true"
-          />
+          Live Demo
+          <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
         </a>
       ) : null}
 
@@ -29,10 +31,10 @@ function ProjectLinks({ project }: { project: Project }) {
         <a
           href={project.repoUrl}
           target="_blank"
-          rel="noreferrer"
-          className="group/link inline-flex items-center gap-1.5 font-mono text-[0.65rem] uppercase tracking-[0.16em] text-steel transition-colors hover:text-bone"
+          rel="noopener noreferrer"
+          className={buttonStyles({ variant: "secondary", size: "sm" })}
         >
-          Source
+          GitHub
           <CodeXml className="h-3.5 w-3.5" aria-hidden="true" />
         </a>
       ) : null}
@@ -78,6 +80,11 @@ export function Projects() {
                   <h3 className="mt-4 font-display display-wide text-3xl font-semibold text-bone">
                     {featured.title}
                   </h3>
+                  {featured.tagline ? (
+                    <p className="mt-2 font-mono text-[0.65rem] uppercase tracking-[0.16em] text-signal">
+                      {featured.tagline}
+                    </p>
+                  ) : null}
                   <p className="mt-4 text-sm leading-relaxed text-steel">
                     {featured.description}
                   </p>
@@ -121,6 +128,11 @@ export function Projects() {
                   <h3 className="font-display display-wide text-2xl font-semibold text-bone">
                     {project.title}
                   </h3>
+                  {project.tagline ? (
+                    <p className="mt-2 font-mono text-[0.6rem] uppercase tracking-[0.16em] text-signal">
+                      {project.tagline}
+                    </p>
+                  ) : null}
                   <p className="mt-3 flex-1 text-sm leading-relaxed text-steel">
                     {project.description}
                   </p>

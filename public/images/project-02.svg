@@ -1,15 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" fill="none" role="img" aria-label="Neutral gradient project placeholder">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" fill="none" role="img" aria-label="Placeholder artwork for AI Coding Agent">
   <defs>
-    <linearGradient id="base" x1="1120" y1="0" x2="80" y2="800" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#161B24"/>
-      <stop offset="0.5" stop-color="#0F141C"/>
-      <stop offset="1" stop-color="#0A0E14"/>
+    <linearGradient id="bg" x1="1200" y1="0" x2="0" y2="800" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#141B22"/>
+      <stop offset="0.55" stop-color="#0C1319"/>
+      <stop offset="1" stop-color="#080C11"/>
     </linearGradient>
-    <radialGradient id="glow" cx="0.72" cy="0.3" r="0.8">
-      <stop stop-color="#293242" stop-opacity="0.5"/>
-      <stop offset="1" stop-color="#0B0F16" stop-opacity="0"/>
+    <radialGradient id="glow" cx="0.26" cy="0.22" r="0.9">
+      <stop stop-color="#2DD4BF" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#2DD4BF" stop-opacity="0"/>
     </radialGradient>
   </defs>
-  <rect width="1200" height="800" fill="url(#base)"/>
+  <rect width="1200" height="800" fill="url(#bg)"/>
   <rect width="1200" height="800" fill="url(#glow)"/>
+  <g text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">
+    <text x="600" y="450" font-size="200" font-weight="600" letter-spacing="-8" fill="#E9E6DF" fill-opacity="0.92">AICA</text>
+    <text x="600" y="512" font-size="16" letter-spacing="8" fill="#8E99A8">PROJECT PLACEHOLDER</text>
+  </g>
 </svg>
