@@ -17,7 +17,7 @@ export function About() {
           eyebrow="Profile"
           title="About"
           titleId="about-title"
-          description="Background, working style, and the short version."
+          description="Who I am, what I build, and the details worth knowing at a glance."
         />
 
         <div className="mt-14 grid gap-10 md:grid-cols-12 md:gap-8">
@@ -32,10 +32,6 @@ export function About() {
                   sizes="(min-width: 768px) 30vw, 90vw"
                   className="h-full w-full object-cover object-[center_18%]"
                 />
-              </div>
-              <div className="flex items-center justify-between px-2 py-3 font-mono text-[0.7rem] uppercase tracking-[0.16em] text-steel">
-                <span>{profile.location}</span>
-                <span>Fig. 01</span>
               </div>
             </div>
 

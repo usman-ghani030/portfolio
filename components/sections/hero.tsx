@@ -154,10 +154,6 @@ export function Hero() {
                   className="h-full w-full object-cover object-[center_18%]"
                 />
               </div>
-              <div className="flex items-center justify-between gap-3 px-2 pb-1 pt-3 font-mono text-[0.65rem] uppercase tracking-[0.16em] text-steel">
-                <span>{profile.location}</span>
-                <span>Portrait</span>
-              </div>
             </div>
           </div>
         </div>

@@ -22,7 +22,7 @@ export function Experience() {
           eyebrow="Track record"
           title="Experience"
           titleId="experience-title"
-          description="Work history and education, most recent first."
+          description="Currently interning at SMIT, and working toward a Bachelor of Software Engineering."
         />
 
         <div className="mt-14 space-y-16">

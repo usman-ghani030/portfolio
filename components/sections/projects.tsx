@@ -67,7 +67,7 @@ export function Projects() {
           eyebrow="Projects"
           title="Selected work"
           titleId="projects-title"
-          description="A selection of recent full stack and AI projects."
+          description="Three projects I have built: an apartment platform, an AI coding agent, and a Physical AI course book."
         />
 
         <div className="mt-14 grid gap-6 md:grid-cols-2">

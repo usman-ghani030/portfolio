@@ -15,7 +15,7 @@ export function Contact() {
           eyebrow="Contact"
           title="Start a conversation"
           titleId="contact-title"
-          description="Tell me what you are building, or just say hello. I answer every message."
+          description="Send a note about a role or a project, and I will reply."
         />
 
         <div className="mt-14 border-y border-line/70 py-8">

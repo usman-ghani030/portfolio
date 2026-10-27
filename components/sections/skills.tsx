@@ -15,7 +15,7 @@ export function Skills() {
           eyebrow="Stack"
           title="Skills"
           titleId="skills-title"
-          description="Grouped by where I work in the stack. No scorecards."
+          description="Front end, back end and databases, and the AI tooling I use every day."
         />
 
         <ul className="mt-14 border-t border-line/70">
