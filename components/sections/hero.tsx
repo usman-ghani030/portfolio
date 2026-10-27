@@ -66,7 +66,7 @@ export function Hero() {
 
       <Container className="relative grid gap-14 lg:grid-cols-12 lg:items-center lg:gap-10">
         <div className="lg:col-span-7">
-          <div className="flex animate-rise flex-wrap items-center gap-x-3 gap-y-1 font-mono text-[0.65rem] uppercase tracking-[0.22em] text-steel">
+          <div className="flex animate-rise flex-wrap items-center gap-x-3 gap-y-1 font-mono text-[0.75rem] uppercase tracking-[0.18em] text-steel">
             <span className="h-1.5 w-1.5 rounded-full bg-signal" aria-hidden="true" />
             <span>{profile.role}</span>
             <span className="text-line">/</span>
@@ -85,7 +85,7 @@ export function Hero() {
           </p>
 
           <div className="mt-6 animate-rise [animation-delay:220ms]">
-            <span className="inline-flex max-w-full flex-wrap items-center gap-x-2.5 gap-y-1 rounded-xl border border-emerald-400/25 bg-emerald-400/10 px-3.5 py-2 font-mono text-[0.58rem] uppercase leading-relaxed tracking-[0.12em] text-emerald-300 sm:rounded-full sm:text-[0.6rem] sm:tracking-[0.16em]">
+            <span className="inline-flex max-w-full flex-wrap items-center gap-x-2.5 gap-y-1 rounded-xl border border-emerald-400/25 bg-emerald-400/10 px-3.5 py-2 font-mono text-[0.65rem] uppercase leading-relaxed tracking-[0.1em] text-emerald-300 sm:rounded-full sm:text-[0.7rem] sm:tracking-[0.14em]">
               <span
                 className="h-1.5 w-1.5 shrink-0 animate-pulse-soft rounded-full bg-emerald-400"
                 aria-hidden="true"
@@ -123,11 +123,11 @@ export function Hero() {
                     target={isExternal ? "_blank" : undefined}
                     rel={isExternal ? "noreferrer" : undefined}
                     aria-label={social.label}
-                    className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-line bg-panel/40 text-steel transition-colors hover:border-signal/50 hover:bg-signal/5 hover:text-signal"
+                    className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-line bg-panel/40 text-steel transition-[color,background-color,border-color,transform] hover:-translate-y-0.5 hover:border-signal/50 hover:bg-signal/5 hover:text-signal"
                   >
                     <SocialIcon
                       label={social.label}
-                      className="h-4 w-4"
+                      className="h-[1.1rem] w-[1.1rem]"
                     />
                   </a>
                 </li>
@@ -154,7 +154,7 @@ export function Hero() {
                   className="h-full w-full object-cover object-[center_18%]"
                 />
               </div>
-              <div className="flex items-center justify-between gap-3 px-2 pb-1 pt-3 font-mono text-[0.55rem] uppercase tracking-[0.18em] text-steel">
+              <div className="flex items-center justify-between gap-3 px-2 pb-1 pt-3 font-mono text-[0.65rem] uppercase tracking-[0.16em] text-steel">
                 <span>{profile.location}</span>
                 <span>Portrait</span>
               </div>

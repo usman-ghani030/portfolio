@@ -69,7 +69,7 @@ export function ContactForm() {
         <div>
           <label
             htmlFor="contact-name"
-            className="font-mono text-[0.6rem] uppercase tracking-[0.18em] text-steel"
+            className="font-mono text-[0.7rem] uppercase tracking-[0.16em] text-steel"
           >
             Name
           </label>
@@ -90,7 +90,7 @@ export function ContactForm() {
         <div>
           <label
             htmlFor="contact-email"
-            className="font-mono text-[0.6rem] uppercase tracking-[0.18em] text-steel"
+            className="font-mono text-[0.7rem] uppercase tracking-[0.16em] text-steel"
           >
             Email
           </label>
@@ -112,7 +112,7 @@ export function ContactForm() {
       <div>
         <label
           htmlFor="contact-message"
-          className="font-mono text-[0.6rem] uppercase tracking-[0.18em] text-steel"
+          className="font-mono text-[0.7rem] uppercase tracking-[0.16em] text-steel"
         >
           Message
         </label>

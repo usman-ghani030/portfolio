@@ -30,7 +30,7 @@ export function Footer() {
           </div>
 
           <div className="md:col-span-3">
-            <p className="font-mono text-[0.65rem] uppercase tracking-[0.22em] text-steel">
+            <p className="font-mono text-[0.72rem] uppercase tracking-[0.2em] text-steel">
               Elsewhere
             </p>
             <ul className="mt-5 space-y-3">
@@ -58,12 +58,12 @@ export function Footer() {
           </div>
 
           <div className="md:col-span-3">
-            <p className="font-mono text-[0.65rem] uppercase tracking-[0.22em] text-steel">
+            <p className="font-mono text-[0.72rem] uppercase tracking-[0.2em] text-steel">
               Contact
             </p>
             <a
               href={`mailto:${profile.email}`}
-              className="mt-5 inline-block break-all text-sm text-bone transition-colors hover:text-signal"
+              className="mt-5 inline-block break-words text-sm text-bone transition-colors hover:text-signal"
             >
               {profile.email}
             </a>
@@ -72,12 +72,12 @@ export function Footer() {
         </div>
 
         <div className="mt-12 flex flex-col gap-4 border-t border-line/70 pt-6 sm:flex-row sm:items-center sm:justify-between">
-          <p className="font-mono text-[0.6rem] uppercase tracking-[0.18em] text-steel">
+          <p className="font-mono text-[0.68rem] uppercase tracking-[0.16em] text-steel">
             © {year} {profile.name}. All rights reserved.
           </p>
           <Link
             href="#top"
-            className="group inline-flex items-center gap-2 font-mono text-[0.65rem] uppercase tracking-[0.18em] text-steel transition-colors hover:text-bone"
+            className="group inline-flex items-center gap-2 font-mono text-[0.72rem] uppercase tracking-[0.16em] text-steel transition-colors hover:text-bone"
           >
             Back to top
             <ArrowUp

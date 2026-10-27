@@ -33,7 +33,7 @@ export function About() {
                   className="h-full w-full object-cover object-[center_18%]"
                 />
               </div>
-              <div className="flex items-center justify-between px-2 py-3 font-mono text-[0.6rem] uppercase tracking-[0.18em] text-steel">
+              <div className="flex items-center justify-between px-2 py-3 font-mono text-[0.7rem] uppercase tracking-[0.16em] text-steel">
                 <span>{profile.location}</span>
                 <span>Fig. 01</span>
               </div>
@@ -41,7 +41,7 @@ export function About() {
 
             <dl className="mt-8 divide-y divide-line/70 border-y border-line/70">
               <div className="flex items-baseline justify-between gap-4 py-3">
-                <dt className="font-mono text-[0.6rem] uppercase tracking-[0.18em] text-steel">
+                <dt className="font-mono text-[0.68rem] uppercase tracking-[0.16em] text-steel">
                   Based
                 </dt>
                 <dd className="text-right text-sm text-bone">
@@ -49,7 +49,7 @@ export function About() {
                 </dd>
               </div>
               <div className="flex items-baseline justify-between gap-4 py-3">
-                <dt className="font-mono text-[0.6rem] uppercase tracking-[0.18em] text-steel">
+                <dt className="font-mono text-[0.68rem] uppercase tracking-[0.16em] text-steel">
                   Experience
                 </dt>
                 <dd className="text-right text-sm text-bone">
@@ -57,7 +57,7 @@ export function About() {
                 </dd>
               </div>
               <div className="flex items-baseline justify-between gap-4 py-3">
-                <dt className="font-mono text-[0.6rem] uppercase tracking-[0.18em] text-steel">
+                <dt className="font-mono text-[0.68rem] uppercase tracking-[0.16em] text-steel">
                   Education
                 </dt>
                 <dd className="max-w-[62%] text-right text-sm text-bone">
@@ -65,7 +65,7 @@ export function About() {
                 </dd>
               </div>
               <div className="flex items-baseline justify-between gap-4 py-3">
-                <dt className="font-mono text-[0.6rem] uppercase tracking-[0.18em] text-steel">
+                <dt className="font-mono text-[0.68rem] uppercase tracking-[0.16em] text-steel">
                   Focus
                 </dt>
                 <dd className="max-w-[62%] text-right text-sm text-bone">
@@ -73,7 +73,7 @@ export function About() {
                 </dd>
               </div>
               <div className="flex items-baseline justify-between gap-4 py-3">
-                <dt className="font-mono text-[0.6rem] uppercase tracking-[0.18em] text-steel">
+                <dt className="font-mono text-[0.68rem] uppercase tracking-[0.16em] text-steel">
                   Status
                 </dt>
                 <dd className="text-right text-sm text-bone">
@@ -81,13 +81,13 @@ export function About() {
                 </dd>
               </div>
               <div className="flex items-baseline justify-between gap-4 py-3">
-                <dt className="font-mono text-[0.6rem] uppercase tracking-[0.18em] text-steel">
+                <dt className="font-mono text-[0.68rem] uppercase tracking-[0.16em] text-steel">
                   Email
                 </dt>
                 <dd className="min-w-0 text-right text-sm">
                   <a
                     href={`mailto:${profile.email}`}
-                    className="break-all text-bone transition-colors hover:text-signal"
+                    className="break-words text-bone transition-colors hover:text-signal"
                   >
                     {profile.email}
                   </a>
@@ -122,7 +122,7 @@ export function About() {
                     href={social.url}
                     target={isExternal ? "_blank" : undefined}
                     rel={isExternal ? "noreferrer" : undefined}
-                    className="font-mono text-[0.65rem] uppercase tracking-[0.18em] text-steel transition-colors hover:text-signal"
+                    className="font-mono text-[0.72rem] uppercase tracking-[0.16em] text-steel transition-colors hover:text-signal"
                   >
                     {social.label}
                   </a>

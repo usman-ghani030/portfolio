@@ -56,7 +56,7 @@ export function Navbar() {
           className="group flex min-w-0 items-center gap-3"
           aria-label={`${profile.name} — back to top`}
         >
-          <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-xs border border-signal/40 bg-signal/10 font-mono text-[0.65rem] font-medium tracking-[0.1em] text-signal transition-colors group-hover:border-signal/70">
+          <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-xs border border-signal/40 bg-signal/10 font-mono text-[0.7rem] font-medium tracking-[0.1em] text-signal transition-colors group-hover:border-signal/70">
             {getInitials(profile.name)}
           </span>
           <span className="truncate font-display display-wide text-sm font-semibold uppercase tracking-[0.08em] text-bone">
@@ -71,7 +71,7 @@ export function Navbar() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="relative font-mono text-[0.65rem] uppercase tracking-[0.18em] text-steel transition-colors after:absolute after:-bottom-1 after:left-0 after:h-px after:w-0 after:bg-signal after:content-[''] after:transition-[width] after:duration-300 hover:text-bone hover:after:w-full"
+                    className="relative font-mono text-[0.75rem] uppercase tracking-[0.16em] text-steel transition-colors after:absolute after:-bottom-1 after:left-0 after:h-px after:w-0 after:bg-signal after:content-[''] after:transition-[width] after:duration-300 hover:text-bone hover:after:w-full"
                   >
                     {link.label}
                   </Link>
@@ -80,12 +80,12 @@ export function Navbar() {
             </ul>
           </nav>
 
-          <div className="hidden items-center gap-2 lg:flex">
+          <div className="hidden items-center gap-2 xl:flex">
             <span
               className="h-1.5 w-1.5 animate-pulse-soft rounded-full bg-signal"
               aria-hidden="true"
             />
-            <span className="font-mono text-[0.6rem] uppercase tracking-[0.16em] text-steel">
+            <span className="font-mono text-[0.7rem] uppercase tracking-[0.14em] text-steel">
               {profile.availability}
             </span>
           </div>
@@ -144,7 +144,7 @@ export function Navbar() {
             >
               Start a conversation
             </ButtonLink>
-            <p className="mt-5 font-mono text-[0.65rem] uppercase tracking-[0.16em] text-steel">
+            <p className="mt-5 font-mono text-[0.72rem] uppercase tracking-[0.14em] text-steel">
               {profile.location}
               <span className="mx-2 text-line">/</span>
               {profile.availability}

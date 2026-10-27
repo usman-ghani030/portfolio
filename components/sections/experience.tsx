@@ -27,7 +27,7 @@ export function Experience() {
 
         <div className="mt-14 space-y-16">
           <div>
-            <h3 className="font-mono text-[0.7rem] uppercase tracking-[0.22em] text-steel">
+            <h3 className="font-mono text-[0.78rem] uppercase tracking-[0.18em] text-steel">
               Experience
             </h3>
             <p className="mt-2 text-sm text-steel">
@@ -42,7 +42,7 @@ export function Experience() {
                 >
                   <span className={accentDot} aria-hidden="true" />
 
-                  <p className="font-mono text-[0.65rem] uppercase tracking-[0.18em] text-steel">
+                  <p className="font-mono text-[0.72rem] uppercase tracking-[0.16em] text-steel">
                     <time dateTime={item.start}>{item.start}</time>
                     <span className="mx-2 text-line">—</span>
                     {item.end === "Present" ? (
@@ -55,7 +55,7 @@ export function Experience() {
                   <h4 className="mt-3 font-display display-wide text-2xl font-semibold text-bone">
                     {item.role}
                   </h4>
-                  <p className="mt-1 font-mono text-[0.65rem] uppercase tracking-[0.18em] text-signal">
+                  <p className="mt-1 font-mono text-[0.72rem] uppercase tracking-[0.16em] text-signal">
                     {item.company}
                   </p>
                   <p className="mt-4 max-w-2xl text-sm leading-relaxed text-steel">
@@ -84,7 +84,7 @@ export function Experience() {
           </div>
 
           <div>
-            <h3 className="font-mono text-[0.7rem] uppercase tracking-[0.22em] text-steel">
+            <h3 className="font-mono text-[0.78rem] uppercase tracking-[0.18em] text-steel">
               Education
             </h3>
 
@@ -106,7 +106,7 @@ export function Experience() {
                   </div>
 
                   {item.institution ? (
-                    <p className="mt-1 font-mono text-[0.65rem] uppercase tracking-[0.18em] text-signal">
+                    <p className="mt-1 font-mono text-[0.72rem] uppercase tracking-[0.16em] text-signal">
                       {item.institution}
                     </p>
                   ) : null}

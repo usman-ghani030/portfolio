@@ -110,7 +110,7 @@ export function Projects() {
                     </h3>
 
                     {project.tagline ? (
-                      <p className="mt-2 font-mono text-[0.65rem] uppercase tracking-[0.16em] text-signal">
+                      <p className="mt-2 font-mono text-[0.72rem] uppercase tracking-[0.14em] text-signal">
                         {project.tagline}
                       </p>
                     ) : null}

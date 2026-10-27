@@ -15,6 +15,9 @@
 
   --container-page: 76rem;
 
+  --text-xs: 0.8125rem;
+  --text-sm: 0.9375rem;
+
   --text-hero: clamp(3.5rem, 8.5vw, 8rem);
   --text-hero--line-height: 0.9;
   --text-hero--letter-spacing: -0.045em;

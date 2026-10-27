@@ -29,7 +29,7 @@ export function Skills() {
                   className="h-1 w-1 shrink-0 bg-signal"
                   aria-hidden="true"
                 />
-                <h3 className="font-mono text-[0.7rem] uppercase tracking-[0.22em] text-bone">
+                <h3 className="font-mono text-[0.78rem] uppercase tracking-[0.18em] text-bone">
                   {group.category}
                 </h3>
               </div>

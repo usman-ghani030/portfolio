@@ -18,7 +18,7 @@ export function SectionHeading({
   return (
     <header className={cn("grid gap-8 md:grid-cols-12 md:gap-6", className)}>
       <div className="md:col-span-3">
-        <p className="font-mono text-[0.65rem] uppercase tracking-[0.25em] text-steel">
+        <p className="font-mono text-[0.75rem] uppercase tracking-[0.2em] text-steel">
           {eyebrow}
         </p>
         <span
