@@ -50,6 +50,22 @@ export function About() {
               </div>
               <div className="flex items-baseline justify-between gap-4 py-3">
                 <dt className="font-mono text-[0.6rem] uppercase tracking-[0.18em] text-steel">
+                  Experience
+                </dt>
+                <dd className="text-right text-sm text-bone">
+                  {profile.experienceYears}
+                </dd>
+              </div>
+              <div className="flex items-baseline justify-between gap-4 py-3">
+                <dt className="font-mono text-[0.6rem] uppercase tracking-[0.18em] text-steel">
+                  Education
+                </dt>
+                <dd className="max-w-[62%] text-right text-sm text-bone">
+                  {profile.educationSummary}
+                </dd>
+              </div>
+              <div className="flex items-baseline justify-between gap-4 py-3">
+                <dt className="font-mono text-[0.6rem] uppercase tracking-[0.18em] text-steel">
                   Focus
                 </dt>
                 <dd className="max-w-[62%] text-right text-sm text-bone">

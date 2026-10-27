@@ -3,7 +3,7 @@ export type Project = {
   title: string;
   tagline?: string;
   description: string;
-  image: string;
+  icon: string;
   tags: string[];
   liveUrl?: string;
   repoUrl?: string;
@@ -25,11 +25,10 @@ export type SkillGroup = {
 };
 
 export type Education = {
-  institution: string;
-  program: string;
+  degree: string;
   start: string;
   end: string;
-  summary: string;
+  note: string;
 };
 
 export type Profile = {
@@ -40,6 +39,8 @@ export type Profile = {
   location: string;
   availability: string;
   focus: string;
+  experienceYears: string;
+  educationSummary: string;
   email: string;
   image: string;
   metaDescription: string;

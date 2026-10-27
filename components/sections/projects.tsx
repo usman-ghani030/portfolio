@@ -1,5 +1,11 @@
-import Image from "next/image";
-import { ArrowUpRight, CodeXml } from "lucide-react";
+import {
+  ArrowUpRight,
+  BookOpen,
+  Bot,
+  Building2,
+  CodeXml,
+} from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 import { projects } from "@/data/projects";
 import type { Project } from "@/types";
 import { Badge } from "@/components/ui/badge";
@@ -7,6 +13,13 @@ import { buttonStyles } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Container } from "@/components/ui/container";
 import { SectionHeading } from "@/components/ui/section-heading";
+import { cn } from "@/lib/utils";
+
+const projectIcons: Record<string, LucideIcon> = {
+  Building2,
+  Bot,
+  BookOpen,
+};
 
 function ProjectLinks({ project }: { project: Project }) {
   if (!project.liveUrl && !project.repoUrl) {
@@ -43,9 +56,6 @@ function ProjectLinks({ project }: { project: Project }) {
 }
 
 export function Projects() {
-  const featured = projects.find((project) => project.featured);
-  const rest = projects.filter((project) => !project.featured);
-
   return (
     <section
       id="projects"
@@ -57,99 +67,81 @@ export function Projects() {
           eyebrow="Projects"
           title="Selected work"
           titleId="projects-title"
-          description="A selection of recent systems and tools."
+          description="A selection of recent full stack and AI projects."
         />
 
-        {featured ? (
-          <article className="mt-14 overflow-hidden rounded-xs border border-line/80 bg-panel/40">
-            <div className="grid md:grid-cols-12">
-              <div className="relative aspect-[16/10] overflow-hidden border-b border-line/70 md:col-span-7 md:aspect-auto md:min-h-[26rem] md:border-b-0 md:border-r">
-                <Image
-                  src={featured.image}
-                  alt={`${featured.title} project preview`}
-                  fill
-                  sizes="(min-width: 768px) 58vw, 100vw"
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-linear-to-t from-void/40 via-transparent to-transparent" />
-              </div>
+        <div className="mt-14 grid gap-6 md:grid-cols-2">
+          {projects.map((project, index) => {
+            const Icon = projectIcons[project.icon] ?? Building2;
+            const isFeatured = index === 0;
 
-              <div className="flex flex-col justify-between p-6 md:col-span-5 md:p-8">
-                <div>
-                  <Badge tone="signal">Featured project</Badge>
-                  <h3 className="mt-4 font-display display-wide text-3xl font-semibold text-bone">
-                    {featured.title}
-                  </h3>
-                  {featured.tagline ? (
-                    <p className="mt-2 font-mono text-[0.65rem] uppercase tracking-[0.16em] text-signal">
-                      {featured.tagline}
+            return (
+              <Card
+                key={project.slug}
+                interactive
+                className={cn(
+                  "group h-full transition-[border-color,background-color,box-shadow] hover:border-signal/25 hover:shadow-[0_0_60px_-24px_var(--color-signal)]",
+                  isFeatured && "md:col-span-2",
+                )}
+              >
+                <article
+                  className={cn(
+                    "flex h-full flex-col p-6 sm:p-8",
+                    isFeatured && "md:grid md:grid-cols-12 md:gap-8",
+                  )}
+                >
+                  <div className={cn(isFeatured && "md:col-span-8")}>
+                    <div className="flex items-center justify-between gap-4">
+                      <span className="inline-flex h-11 w-11 items-center justify-center rounded-xs border border-line bg-void/60 text-signal transition-colors group-hover:border-signal/40">
+                        <Icon className="h-5 w-5" aria-hidden="true" />
+                      </span>
+                      {project.featured ? (
+                        <Badge tone="signal">Featured project</Badge>
+                      ) : null}
+                    </div>
+
+                    <h3
+                      className={cn(
+                        "mt-6 font-display display-wide font-semibold text-bone",
+                        isFeatured ? "text-3xl" : "text-2xl",
+                      )}
+                    >
+                      {project.title}
+                    </h3>
+
+                    {project.tagline ? (
+                      <p className="mt-2 font-mono text-[0.65rem] uppercase tracking-[0.16em] text-signal">
+                        {project.tagline}
+                      </p>
+                    ) : null}
+
+                    <p className="mt-4 max-w-2xl text-sm leading-relaxed text-steel">
+                      {project.description}
                     </p>
-                  ) : null}
-                  <p className="mt-4 text-sm leading-relaxed text-steel">
-                    {featured.description}
-                  </p>
-                  <ul className="mt-5 flex flex-wrap gap-2">
-                    {featured.tags.map((tag, index) => (
-                      <li key={`${featured.slug}-tag-${index}`}>
-                        <Badge>{tag}</Badge>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                  </div>
 
-                <div className="mt-8">
-                  <ProjectLinks project={featured} />
-                </div>
-              </div>
-            </div>
-          </article>
-        ) : null}
+                  <div
+                    className={cn(
+                      "mt-auto flex flex-col gap-6 border-t border-line/70 pt-6",
+                      isFeatured &&
+                        "md:mt-0 md:border-l md:border-t-0 md:pl-8 md:pt-0",
+                      isFeatured && "md:col-span-4",
+                    )}
+                  >
+                    <ul className="flex flex-wrap gap-2">
+                      {project.tags.map((tag, tagIndex) => (
+                        <li key={`${project.slug}-tag-${tagIndex}`}>
+                          <Badge>{tag}</Badge>
+                        </li>
+                      ))}
+                    </ul>
 
-        <div className="mt-6 grid gap-6 md:grid-cols-2">
-          {rest.map((project) => (
-            <Card
-              key={project.slug}
-              interactive
-              className="group h-full overflow-hidden"
-            >
-              <article className="flex h-full flex-col">
-                <div className="relative aspect-[16/10] overflow-hidden border-b border-line/70">
-                  <Image
-                    src={project.image}
-                    alt={`${project.title} project preview`}
-                    fill
-                    sizes="(min-width: 768px) 50vw, 100vw"
-                    className="object-cover transition-transform duration-700 ease-out-expo group-hover:scale-[1.02]"
-                  />
-                  <div className="absolute inset-0 bg-linear-to-t from-void/30 via-transparent to-transparent" />
-                </div>
-
-                <div className="flex flex-1 flex-col p-6">
-                  <h3 className="font-display display-wide text-2xl font-semibold text-bone">
-                    {project.title}
-                  </h3>
-                  {project.tagline ? (
-                    <p className="mt-2 font-mono text-[0.6rem] uppercase tracking-[0.16em] text-signal">
-                      {project.tagline}
-                    </p>
-                  ) : null}
-                  <p className="mt-3 flex-1 text-sm leading-relaxed text-steel">
-                    {project.description}
-                  </p>
-                  <ul className="mt-5 flex flex-wrap gap-2">
-                    {project.tags.map((tag, index) => (
-                      <li key={`${project.slug}-tag-${index}`}>
-                        <Badge>{tag}</Badge>
-                      </li>
-                    ))}
-                  </ul>
-                  <div className="mt-6 border-t border-line/70 pt-4">
                     <ProjectLinks project={project} />
                   </div>
-                </div>
-              </article>
-            </Card>
-          ))}
+                </article>
+              </Card>
+            );
+          })}
         </div>
       </Container>
     </section>

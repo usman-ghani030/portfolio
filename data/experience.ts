@@ -1,24 +1,14 @@
-import type { Education, Experience } from "@/types";
+import type { Experience } from "@/types";
 
-// Work history has not been supplied yet, so this stays a single marked placeholder.
 export const experience: Experience[] = [
   {
-    company: "TODO: replace with company name",
-    role: "TODO: replace with your role",
-    start: "TODO",
-    end: "TODO",
+    company: "SMIT (Saylani Mass IT Training)",
+    role: "Intern",
+    start: "June 2026",
+    end: "Present",
     summary:
-      "TODO: replace with one or two sentences on what you built and your scope.",
-    highlights: ["TODO: replace with a key contribution."],
-  },
-];
-
-export const education: Education[] = [
-  {
-    institution: "TODO: replace with institution",
-    program: "TODO: replace with program",
-    start: "TODO",
-    end: "TODO",
-    summary: "TODO: replace with a one-line description.",
+      "Completed an internship at SMIT, building practical full stack and AI skills.",
+    // TODO: add 2 to 3 things I built or learned during the internship.
+    highlights: ["TODO"],
   },
 ];
