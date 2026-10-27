@@ -105,19 +105,31 @@ export function Experience() {
                     ) : null}
                   </div>
 
-                  <p className="mt-2 font-mono text-[0.65rem] uppercase tracking-[0.18em] text-steel">
-                    {item.start ? (
-                      <>
-                        <time dateTime={item.start}>{item.start}</time>
-                        <span className="mx-2 text-line">—</span>
-                      </>
-                    ) : null}
-                    <span className="text-signal">{item.end}</span>
-                  </p>
+                  {item.institution ? (
+                    <p className="mt-1 font-mono text-[0.65rem] uppercase tracking-[0.18em] text-signal">
+                      {item.institution}
+                    </p>
+                  ) : null}
 
-                  <p className="mt-3 text-sm leading-relaxed text-steel">
-                    {item.note}
-                  </p>
+                  {item.start || item.end ? (
+                    <p className="mt-2 font-mono text-[0.65rem] uppercase tracking-[0.18em] text-steel">
+                      {item.start ? (
+                        <>
+                          <time dateTime={item.start}>{item.start}</time>
+                          <span className="mx-2 text-line">—</span>
+                        </>
+                      ) : null}
+                      {item.end ? (
+                        <span className="text-signal">{item.end}</span>
+                      ) : null}
+                    </p>
+                  ) : null}
+
+                  {item.note ? (
+                    <p className="mt-3 text-sm leading-relaxed text-steel">
+                      {item.note}
+                    </p>
+                  ) : null}
                 </li>
               ))}
             </ol>

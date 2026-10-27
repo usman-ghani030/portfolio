@@ -6,4 +6,8 @@ export const education: Education[] = [
     end: "Present",
     note: "Currently pursuing",
   },
+  {
+    degree: "Intermediate",
+    institution: "Adamjee Government Science College",
+  },
 ];
