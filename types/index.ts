@@ -26,7 +26,7 @@ export type SkillGroup = {
 
 export type Education = {
   degree: string;
-  start: string;
+  start?: string;
   end: string;
   note: string;
 };

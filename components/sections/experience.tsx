@@ -62,20 +62,22 @@ export function Experience() {
                     {item.summary}
                   </p>
 
-                  <ul className="mt-4 space-y-2">
-                    {item.highlights.map((highlight, index) => (
-                      <li
-                        key={`${item.company}-highlight-${index}`}
-                        className="flex gap-3 text-sm leading-relaxed text-steel"
-                      >
-                        <span
-                          className="mt-2 h-px w-3 shrink-0 bg-signal/70"
-                          aria-hidden="true"
-                        />
-                        <span>{highlight}</span>
-                      </li>
-                    ))}
-                  </ul>
+                  {item.highlights.length > 0 ? (
+                    <ul className="mt-4 space-y-2">
+                      {item.highlights.map((highlight, index) => (
+                        <li
+                          key={`${item.company}-highlight-${index}`}
+                          className="flex gap-3 text-sm leading-relaxed text-steel"
+                        >
+                          <span
+                            className="mt-2 h-px w-3 shrink-0 bg-signal/70"
+                            aria-hidden="true"
+                          />
+                          <span>{highlight}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : null}
                 </li>
               ))}
             </ol>
@@ -104,8 +106,12 @@ export function Experience() {
                   </div>
 
                   <p className="mt-2 font-mono text-[0.65rem] uppercase tracking-[0.18em] text-steel">
-                    <time dateTime={item.start}>{item.start}</time>
-                    <span className="mx-2 text-line">—</span>
+                    {item.start ? (
+                      <>
+                        <time dateTime={item.start}>{item.start}</time>
+                        <span className="mx-2 text-line">—</span>
+                      </>
+                    ) : null}
                     <span className="text-signal">{item.end}</span>
                   </p>
 

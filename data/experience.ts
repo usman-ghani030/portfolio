@@ -7,8 +7,7 @@ export const experience: Experience[] = [
     start: "June 2026",
     end: "Present",
     summary:
-      "Completed an internship at SMIT, building practical full stack and AI skills.",
-    // TODO: add 2 to 3 things I built or learned during the internship.
-    highlights: ["TODO"],
+      "Currently completing an internship at SMIT, building practical full stack and AI skills.",
+    highlights: [],
   },
 ];

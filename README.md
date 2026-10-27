@@ -13,7 +13,7 @@ npx tsc --noEmit
 
 ## Content
 
-All personal content lives in `data/`. Placeholder copy is marked with `TODO: replace`.
+All personal content lives in `data/`.
 
 ## Environment
 
