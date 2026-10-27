@@ -34,10 +34,12 @@ export function Skills() {
                 </h3>
               </div>
 
-              <ul className="flex flex-wrap gap-2 md:col-span-9">
+              <ul className="flex flex-wrap gap-2.5 md:col-span-9">
                 {group.items.map((item) => (
                   <li key={item}>
-                    <Badge>{item}</Badge>
+                    <Badge className="px-3 py-1.5 text-[0.82rem] tracking-[0.12em] sm:text-[0.92rem]">
+                      {item}
+                    </Badge>
                   </li>
                 ))}
               </ul>
